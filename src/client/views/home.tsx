@@ -38,12 +38,28 @@ export function HomePage() {
         <div className="hero-background">
           <div className="rain-container" />
           <div className="hero-overlay" />
+          {/* Decorative Elements */}
+          <div className="hero-decorations">
+            {/* Floating circles */}
+            <div className="hero-circle hero-circle-1" />
+            <div className="hero-circle hero-circle-2" />
+            <div className="hero-circle hero-circle-3" />
+            {/* Corner accents */}
+            <div className="hero-accent hero-accent-tl" />
+            <div className="hero-accent hero-accent-br" />
+            {/* Grid pattern overlay */}
+            <div className="hero-grid" />
+          </div>
         </div>
         <div className="hero-container">
           <div className="hero-content">
+            {/* Tagline badge */}
+            <div className="hero-badge">
+              <span className="hero-badge-dot" />
+              <span>AI-Powered Storyboarding</span>
+            </div>
             <h1 className="hero-title">
-              Create Professional Storyboards Instantly with AI - No Sign-Up
-              Required
+              Create Professional Storyboards Instantly with AI
             </h1>
             <p className="hero-subtitle">
               Transform your creative ideas into visual storyboards in minutes.
@@ -57,10 +73,13 @@ export function HomePage() {
               >
                 Start Creating Free →
               </a>
+              <span className="hero-note">No sign-up required</span>
             </div>
           </div>
           <div className="hero-visual">
             <div className="hero-demo">
+              {/* Glow effect behind demo */}
+              <div className="hero-demo-glow" />
               <div className="demo-interface">
                 <div className="demo-panel">
                   <div className="demo-frame active" />
@@ -90,11 +109,12 @@ export function HomePage() {
               }}
             >
               <div className="value-prop-icon">
-                <img
-                  src="https://static.step1.dev/1yp0xd/assets/67130feaa44d.svg"
-                  alt="Privacy Icon"
-                  className="value-prop-img"
-                />
+                {/* User/No-Login Icon - Elegant line style */}
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="16" r="8" stroke="#020817" strokeWidth="1.5" fill="none"/>
+                  <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                  <path d="M32 8l8 8M40 8l-8 8" stroke="#ea3a3a" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
               </div>
               <h3>No Sign-Up, No Login</h3>
               <p>
@@ -109,11 +129,11 @@ export function HomePage() {
               }}
             >
               <div className="value-prop-icon">
-                <img
-                  src="https://static.step1.dev/1yp0xd/assets/9ef6ac35b2b1.svg"
-                  alt="Shield Icon"
-                  className="value-prop-img"
-                />
+                {/* Shield/Privacy Icon - Elegant line style */}
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4L6 12v12c0 11.046 8.954 20 20 20h-2c11.046 0 20-8.954 20-20V12L24 4z" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
+                  <path d="M16 24l6 6 12-12" stroke="#ea3a3a" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
               <h3>100% Local Storage</h3>
               <p>
@@ -128,11 +148,13 @@ export function HomePage() {
               }}
             >
               <div className="value-prop-icon">
-                <img
-                  src="https://static.step1.dev/1yp0xd/assets/3ea1c7185b5e.svg"
-                  alt="AI Sparkle Icon"
-                  className="value-prop-img"
-                />
+                {/* AI/Sparkle Icon - Elegant line style */}
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="#020817" strokeWidth="1.5" strokeLinecap="round"/>
+                  <path d="M10.1 10.1l5.66 5.66M32.24 32.24l5.66 5.66M37.9 10.1l-5.66 5.66M15.76 32.24l-5.66 5.66" stroke="#020817" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="24" cy="24" r="8" stroke="#ea3a3a" strokeWidth="1.5" fill="none"/>
+                  <circle cx="24" cy="24" r="3" fill="#ea3a3a"/>
+                </svg>
               </div>
               <h3>Advanced GLM Image Model</h3>
               <p>

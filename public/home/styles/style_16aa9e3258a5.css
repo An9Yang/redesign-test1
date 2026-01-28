@@ -255,6 +255,175 @@ body {
   z-index: 1;
 }
 
+/* Hero Decorative Elements */
+.hero-decorations {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Floating Circles */
+.hero-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-circle-1 {
+  width: 400px;
+  height: 400px;
+  top: -100px;
+  right: -100px;
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.hero-circle-2 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  left: -80px;
+  border-color: rgba(234, 58, 58, 0.1);
+  animation: float-slow 25s ease-in-out infinite reverse;
+}
+
+.hero-circle-3 {
+  width: 150px;
+  height: 150px;
+  top: 40%;
+  right: 20%;
+  border-color: rgba(255, 255, 255, 0.05);
+  animation: float-slow 15s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(10px, -15px) rotate(2deg);
+  }
+
+  50% {
+    transform: translate(-5px, 10px) rotate(-1deg);
+  }
+
+  75% {
+    transform: translate(-10px, -5px) rotate(1deg);
+  }
+}
+
+/* Corner Accents */
+.hero-accent {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.hero-accent-tl {
+  top: 80px;
+  left: 40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-accent-br {
+  bottom: 40px;
+  right: 40px;
+  border-right: 1px solid rgba(234, 58, 58, 0.15);
+  border-bottom: 1px solid rgba(234, 58, 58, 0.15);
+}
+
+/* Grid Pattern */
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+}
+
+/* Hero Badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(248, 250, 252, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--brand-accent);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(0.8);
+  }
+}
+
+/* Hero Note */
+.hero-note {
+  font-size: 0.8125rem;
+  color: rgba(248, 250, 252, 0.6);
+  font-weight: 400;
+}
+
+/* Demo Glow Effect */
+.hero-demo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(234, 58, 58, 0.15) 0%, transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-demo {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16/10;
+  background: var(--bg-white);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  position: relative;
+  overflow: visible;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
 .hero-container {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -295,18 +464,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero-demo {
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 16/10;
-  background: var(--bg-white);
-  border-radius: var(--radius-xl);
-  padding: 1.5rem;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .demo-interface {
@@ -477,11 +634,21 @@ section {
 }
 
 .value-prop-icon {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 56px;
+}
+
+.value-prop-icon svg {
+  width: 48px;
   height: 48px;
+  transition: transform var(--transition-normal);
+}
+
+.value-prop:hover .value-prop-icon svg {
+  transform: scale(1.1);
 }
 
 .value-prop-img {

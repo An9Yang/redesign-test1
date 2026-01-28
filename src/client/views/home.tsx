@@ -1,6 +1,6 @@
-// @ts-nocheck
 import { Features } from '@/components/home/features';
 import { Faq } from '@/components/home/faq';
+import { HeroParticles } from '@/components/home/hero-particles';
 
 export function HomePage() {
   return (
@@ -36,20 +36,9 @@ export function HomePage() {
       </nav>
       <section key="3" className="hero fade-in">
         <div className="hero-background">
-          <div className="rain-container" />
+          <HeroParticles />
           <div className="hero-overlay" />
-          {/* Decorative Elements */}
-          <div className="hero-decorations">
-            {/* Floating circles */}
-            <div className="hero-circle hero-circle-1" />
-            <div className="hero-circle hero-circle-2" />
-            <div className="hero-circle hero-circle-3" />
-            {/* Corner accents */}
-            <div className="hero-accent hero-accent-tl" />
-            <div className="hero-accent hero-accent-br" />
-            {/* Grid pattern overlay */}
-            <div className="hero-grid" />
-          </div>
+          <div className="hero-grid" />
         </div>
         <div className="hero-container">
           <div className="hero-content">

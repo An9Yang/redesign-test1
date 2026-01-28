@@ -848,6 +848,38 @@ section {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 8px solid var(--border-color);
+  animation: arrow-color 8s ease-in-out infinite;
+}
+
+/* Sync arrow animation with connector flow */
+.steps-flow .step-connector:nth-of-type(2) span {
+  animation-delay: 0s;
+}
+
+.steps-flow .step-connector:nth-of-type(4) span {
+  animation-delay: 2s;
+}
+
+.steps-flow .step-connector:nth-of-type(6) span {
+  animation-delay: 4s;
+}
+
+@keyframes arrow-color {
+
+  0%,
+  24% {
+    border-left-color: var(--border-color);
+  }
+
+  25%,
+  45% {
+    border-left-color: var(--brand-accent);
+  }
+
+  46%,
+  100% {
+    border-left-color: var(--border-color);
+  }
 }
 
 /* Connector animation */

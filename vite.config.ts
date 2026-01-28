@@ -27,7 +27,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   nitro: {
-    preset: 'deno-deploy',
+    preset: 'vercel',
   },
   build: {
     sourcemap: 'hidden',

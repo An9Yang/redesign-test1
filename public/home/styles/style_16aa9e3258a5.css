@@ -836,6 +836,8 @@ section {
   height: 2px;
   background: var(--border-color);
   position: relative;
+  margin-bottom: 2rem;
+  /* Push connector up to align with icon center */
 }
 
 .step-connector span {

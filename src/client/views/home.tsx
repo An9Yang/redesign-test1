@@ -53,11 +53,6 @@ export function HomePage() {
         </div>
         <div className="hero-container">
           <div className="hero-content">
-            {/* Tagline badge */}
-            <div className="hero-badge">
-              <span className="hero-badge-dot" />
-              <span>AI-Powered Storyboarding</span>
-            </div>
             <h1 className="hero-title">
               Create Professional Storyboards Instantly with AI
             </h1>

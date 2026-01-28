@@ -21,17 +21,17 @@ export const HeroParticles = () => {
         let time = 0;
 
         // Configuration
-        const gap = 30; // Distance between points
-        const rows = 40;
-        const cols = 40;
-        const waveSpeed = 0.02;
-        const waveHeight = 40;
-        const waveFrequency = 0.1;
+        const gap = 22; // Distance between points (Denser)
+        const rows = 60; // More coverage
+        const cols = 60;
+        const waveSpeed = 0.04; // Faster flow
+        const waveHeight = 70; // Higher waves
+        const waveFrequency = 0.12;
 
         // 3D Projection configuration
-        const fov = 400;
-        const viewDistance = 500;
-        const tiltAngle = 0.4; // Tilt the grid to create depth
+        const fov = 350; // Stronger perspective
+        const viewDistance = 450;
+        const tiltAngle = 0.5; // Steeper angle
 
         const render = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);

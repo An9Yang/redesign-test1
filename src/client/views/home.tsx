@@ -102,65 +102,41 @@ export function HomePage() {
       <section key="5" className="value-props fade-in">
         <div className="container">
           <div className="value-props-grid">
-            <div
-              className="value-prop fade-in"
-              style={{
-                animationDelay: '0s',
-              }}
-            >
+            <div className="value-prop fade-in" style={{ animationDelay: '0s' }}>
               <div className="value-prop-icon">
-                {/* User/No-Login Icon - Elegant line style */}
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="24" cy="16" r="8" stroke="#020817" strokeWidth="1.5" fill="none"/>
-                  <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-                  <path d="M32 8l8 8M40 8l-8 8" stroke="#ea3a3a" strokeWidth="1.5" strokeLinecap="round"/>
+                  <circle cx="24" cy="16" r="8" stroke="#020817" strokeWidth="1.5" fill="none" />
+                  <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+                  <path d="M32 8l8 8M40 8l-8 8" stroke="#ea3a3a" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </div>
-              <h3>No Sign-Up, No Login</h3>
-              <p>
-                Start creating immediately. No account creation, no email
-                verification, no barriers. Your creativity flows uninterrupted.
-              </p>
+              <h3>Zero Barriers</h3>
+              <p className="value-prop-short">No signup. No login. Just create.</p>
+              <p className="value-prop-detail">Start immediately without account creation, email verification, or any barriers.</p>
             </div>
-            <div
-              className="value-prop fade-in"
-              style={{
-                animationDelay: '0.1s',
-              }}
-            >
+            <div className="value-prop fade-in" style={{ animationDelay: '0.1s' }}>
               <div className="value-prop-icon">
-                {/* Shield/Privacy Icon - Elegant line style */}
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 4L6 12v12c0 11.046 8.954 20 20 20h-2c11.046 0 20-8.954 20-20V12L24 4z" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
-                  <path d="M16 24l6 6 12-12" stroke="#ea3a3a" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M24 4L6 12v12c0 11.046 8.954 20 20 20h-2c11.046 0 20-8.954 20-20V12L24 4z" stroke="#020817" strokeWidth="1.5" fill="none" strokeLinejoin="round" />
+                  <path d="M16 24l6 6 12-12" stroke="#ea3a3a" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <h3>100% Local Storage</h3>
-              <p>
-                All your projects and data stay in your browser. We never see
-                your content. Your ideas remain yours, always.
-              </p>
+              <h3>100% Private</h3>
+              <p className="value-prop-short">Your data stays in your browser.</p>
+              <p className="value-prop-detail">All projects stored locally. We never see your content. Complete privacy guaranteed.</p>
             </div>
-            <div
-              className="value-prop fade-in"
-              style={{
-                animationDelay: '0.2s',
-              }}
-            >
+            <div className="value-prop fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="value-prop-icon">
-                {/* AI/Sparkle Icon - Elegant line style */}
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="#020817" strokeWidth="1.5" strokeLinecap="round"/>
-                  <path d="M10.1 10.1l5.66 5.66M32.24 32.24l5.66 5.66M37.9 10.1l-5.66 5.66M15.76 32.24l-5.66 5.66" stroke="#020817" strokeWidth="1.5" strokeLinecap="round"/>
-                  <circle cx="24" cy="24" r="8" stroke="#ea3a3a" strokeWidth="1.5" fill="none"/>
-                  <circle cx="24" cy="24" r="3" fill="#ea3a3a"/>
+                  <path d="M24 4v8M24 36v8M4 24h8M36 24h8" stroke="#020817" strokeWidth="1.5" strokeLinecap="round" />
+                  <path d="M10.1 10.1l5.66 5.66M32.24 32.24l5.66 5.66M37.9 10.1l-5.66 5.66M15.76 32.24l-5.66 5.66" stroke="#020817" strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="24" cy="24" r="8" stroke="#ea3a3a" strokeWidth="1.5" fill="none" />
+                  <circle cx="24" cy="24" r="3" fill="#ea3a3a" />
                 </svg>
               </div>
-              <h3>Advanced GLM Image Model</h3>
-              <p>
-                Powered by cutting-edge GLM image generation technology. Create
-                stunning, professional-quality storyboard frames in seconds.
-              </p>
+              <h3>AI-Powered</h3>
+              <p className="value-prop-short">GLM model generates pro-quality frames.</p>
+              <p className="value-prop-detail">Cutting-edge image generation technology creates stunning storyboards in seconds.</p>
             </div>
           </div>
         </div>
@@ -168,64 +144,53 @@ export function HomePage() {
       <section key="7" id="how-it-works" className="how-it-works fade-in">
         <div className="container">
           <div className="section-header">
-            <h2>From Idea to Storyboard in 4 Simple Steps</h2>
-            <p>
-              Create professional storyboards with our intuitive AI-powered
-              workflow
-            </p>
+            <h2>Idea to Storyboard in 4 Steps</h2>
           </div>
-          <div className="steps-grid">
-            <div
-              className="step fade-in"
-              style={{
-                animationDelay: '0.3s',
-              }}
-            >
-              <div className="step-number">1</div>
-              <h3>Write Your Creative Description</h3>
-              <p>
-                Simply describe your scene in natural language. Our AI
-                understands context, camera movements, and visual storytelling.
-              </p>
+          <div className="steps-flow">
+            <div className="step-item" data-step="1">
+              <div className="step-icon-wrap">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path d="M4 8h24M4 16h16M4 24h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <span className="step-label">Describe</span>
+              <div className="step-tooltip">Write your scene in natural language</div>
             </div>
-            <div
-              className="step fade-in"
-              style={{
-                animationDelay: '0.4s',
-              }}
-            >
-              <div className="step-number">2</div>
-              <h3>AI Optimizes Your Text</h3>
-              <p>
-                Our AI refines your description, extracting key elements like
-                camera angles, character actions, and atmosphere.
-              </p>
+            <div className="step-connector"><span /></div>
+            <div className="step-item" data-step="2">
+              <div className="step-icon-wrap">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <circle cx="16" cy="16" r="10" stroke="currentColor" strokeWidth="2" />
+                  <path d="M16 10v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <span className="step-label">AI Refines</span>
+              <div className="step-tooltip">AI extracts camera angles, actions & mood</div>
             </div>
-            <div
-              className="step fade-in"
-              style={{
-                animationDelay: '0.5s',
-              }}
-            >
-              <div className="step-number">3</div>
-              <h3>Fine-Tune Your Vision</h3>
-              <p>
-                Adjust camera angles, character actions, props, atmosphere, and
-                artistic style to match your exact vision.
-              </p>
+            <div className="step-connector"><span /></div>
+            <div className="step-item" data-step="3">
+              <div className="step-icon-wrap">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <rect x="4" y="4" width="10" height="10" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <rect x="18" y="4" width="10" height="10" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <rect x="4" y="18" width="10" height="10" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <rect x="18" y="18" width="10" height="10" rx="2" stroke="currentColor" strokeWidth="2" />
+                </svg>
+              </div>
+              <span className="step-label">Fine-Tune</span>
+              <div className="step-tooltip">Adjust camera, style & atmosphere</div>
             </div>
-            <div
-              className="step fade-in"
-              style={{
-                animationDelay: '0.6s',
-              }}
-            >
-              <div className="step-number">4</div>
-              <h3>Generate Images & Videos</h3>
-              <p>
-                Create high-quality storyboard images instantly. Generate videos
-                for each frame. Export and share your professional storyboards.
-              </p>
+            <div className="step-connector"><span /></div>
+            <div className="step-item" data-step="4">
+              <div className="step-icon-wrap">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <rect x="4" y="6" width="24" height="16" rx="2" stroke="currentColor" strokeWidth="2" />
+                  <path d="M13 14l6-4v8l-6-4z" fill="currentColor" />
+                  <path d="M8 26h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
+              </div>
+              <span className="step-label">Generate</span>
+              <div className="step-tooltip">Create images & videos instantly</div>
             </div>
           </div>
         </div>
@@ -233,66 +198,45 @@ export function HomePage() {
       <section key="9" id="use-cases" className="use-cases fade-in">
         <div className="container">
           <div className="section-header">
-            <h2>Perfect for Every Creative Project</h2>
-            <p>Whether you're making films, ads, or social media content</p>
+            <h2>Built for Creators</h2>
           </div>
           <div className="use-cases-grid">
-            <div
-              className="use-case fade-in"
-              style={{
-                animationDelay: '0.7s',
-              }}
-            >
-              <h3>Film & Screenplay Storyboards</h3>
-              <p>
-                Visualize your screenplay scenes before production. Perfect for
-                directors, cinematographers, and production teams.
-              </p>
-              <a
-                href="https://app.ai-storyboard.com/"
-                target="_blank"
-                className="use-case-cta"
-              >
-                Try for Film →
-              </a>
+            <div className="use-case fade-in" style={{ animationDelay: '0.7s' }}>
+              <div className="use-case-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <rect x="4" y="8" width="32" height="20" rx="2" stroke="#020817" strokeWidth="1.5" />
+                  <path d="M16 18l8-5v10l-8-5z" fill="#ea3a3a" />
+                  <path d="M10 32h20" stroke="#020817" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </div>
+              <h3>Film & Video</h3>
+              <p>Pre-visualize scenes for production teams</p>
+              <a href="https://app.ai-storyboard.com/" target="_blank" className="use-case-cta">Try Now →</a>
             </div>
-            <div
-              className="use-case fade-in"
-              style={{
-                animationDelay: '0.8s',
-              }}
-            >
-              <h3>Ad Campaign Storyboards</h3>
-              <p>
-                Create compelling visual presentations for clients. Show your
-                creative vision with professional storyboard frames.
-              </p>
-              <a
-                href="https://app.ai-storyboard.com/"
-                target="_blank"
-                className="use-case-cta"
-              >
-                Try for Ads →
-              </a>
+            <div className="use-case fade-in" style={{ animationDelay: '0.8s' }}>
+              <div className="use-case-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <rect x="6" y="4" width="28" height="32" rx="2" stroke="#020817" strokeWidth="1.5" />
+                  <path d="M12 12h16M12 18h10M12 24h14" stroke="#020817" strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="28" cy="28" r="6" fill="#ea3a3a" />
+                  <path d="M26 28h4M28 26v4" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </div>
+              <h3>Advertising</h3>
+              <p>Present creative vision to clients</p>
+              <a href="https://app.ai-storyboard.com/" target="_blank" className="use-case-cta">Try Now →</a>
             </div>
-            <div
-              className="use-case fade-in"
-              style={{
-                animationDelay: '0.9s',
-              }}
-            >
-              <h3>Social Media Content</h3>
-              <p>
-                Plan your YouTube videos, TikTok content, and social media
-                posts. Generate storyboard images to guide your production.
-              </p>
-              <a
-                href="https://app.ai-storyboard.com/"
-                target="_blank"
-                className="use-case-cta"
-              >
-                Try for Videos →
-              </a>
+            <div className="use-case fade-in" style={{ animationDelay: '0.9s' }}>
+              <div className="use-case-icon">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <rect x="8" y="4" width="24" height="32" rx="4" stroke="#020817" strokeWidth="1.5" />
+                  <circle cx="20" cy="32" r="2" fill="#020817" />
+                  <rect x="12" y="10" width="16" height="16" rx="1" stroke="#ea3a3a" strokeWidth="1.5" />
+                </svg>
+              </div>
+              <h3>Social Media</h3>
+              <p>Plan YouTube, TikTok & Reels content</p>
+              <a href="https://app.ai-storyboard.com/" target="_blank" className="use-case-cta">Try Now →</a>
             </div>
           </div>
         </div>
@@ -301,8 +245,8 @@ export function HomePage() {
         <div className="container">
           <div className="stats-grid">
             <div className="stat">
-              <div className="stat-number">10,000+</div>
-              <div className="stat-label">Storyboards Created</div>
+              <div className="stat-number" data-count="10000">10,000+</div>
+              <div className="stat-label">Storyboards</div>
             </div>
             <div className="stat">
               <div className="stat-number">100%</div>
@@ -310,31 +254,19 @@ export function HomePage() {
             </div>
             <div className="stat">
               <div className="stat-number">Zero</div>
-              <div className="stat-label">Data Collection</div>
+              <div className="stat-label">Data Collected</div>
             </div>
           </div>
         </div>
       </section>
       <section key="13" className="final-cta fade-in">
         <div className="container">
-          <h2>Ready to Bring Your Ideas to Life?</h2>
-          <p>
-            Join thousands of creators who trust AI Storyboard for their visual
-            storytelling needs. Start creating now - completely free.
-          </p>
+          <h2>Free. Private. Powerful.</h2>
+          <p>Start creating your storyboard now.</p>
           <div className="cta-actions">
-            <a
-              href="https://app.ai-storyboard.com/"
-              target="_blank"
-              className="btn btn-primary btn-large"
-            >
-              Create Your First Storyboard →
+            <a href="https://app.ai-storyboard.com/" target="_blank" className="btn btn-primary btn-large">
+              Start Creating →
             </a>
-            <div className="cta-links">
-              <a href="#features">View Features</a>
-              <a href="#how-it-works">Read Documentation</a>
-              <a href="#faq">Contact Support</a>
-            </div>
           </div>
         </div>
       </section>
